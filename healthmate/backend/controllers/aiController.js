@@ -1,8 +1,8 @@
 const { generateHealthTips, generateFriendlyMessage } = require('../utils/gemini');
 
-// @desc    Get health tips
-// @route   GET /api/ai/health-tips
-// @access  Private
+// @desc   
+// @route   
+// @access  
 const getHealthTips = async (req, res) => {
   try {
     const userLanguage = req.user.language || 'en';
@@ -32,9 +32,9 @@ const getHealthTips = async (req, res) => {
   }
 };
 
-// @desc    Get friendly message
-// @route   GET /api/ai/friendly-message
-// @access  Private
+// @desc    
+// @route  
+// @access 
 const getFriendlyMessage = async (req, res) => {
   try {
     const userLanguage = req.user.language || 'en';
@@ -65,9 +65,9 @@ const getFriendlyMessage = async (req, res) => {
   }
 };
 
-// @desc    Get AI insights for dashboard
-// @route   GET /api/ai/insights
-// @access  Private
+// @desc    
+// @route   
+// @access  
 const getAIInsights = async (req, res) => {
   try {
     const userLanguage = req.user.language || 'en';
