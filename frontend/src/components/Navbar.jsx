@@ -1,18 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { 
-  Menu, 
-  X, 
-  User, 
-  LogOut, 
-  Settings, 
-  Heart, 
-  FileText, 
-  Activity,
-  Globe,
-  Home
-} from 'lucide-react'
+import {  Menu, X, User, LogOut,  Settings, Heart, FileText, Activity, Globe, Home} from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -43,17 +32,16 @@ const Navbar = () => {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/20"
-    >
+      className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+        
           <Link to="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center"
-            >
+              className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center" >
               <Heart className="w-6 h-6 text-white" />
             </motion.div>
             <div className="flex flex-col">
@@ -66,7 +54,6 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
               if (item.protected && !isAuthenticated) return null
