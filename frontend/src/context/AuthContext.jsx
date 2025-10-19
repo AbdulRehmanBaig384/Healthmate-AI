@@ -4,7 +4,6 @@ import toast from 'react-hot-toast'
 
 const AuthContext = createContext()
 
-// Initial state
 const initialState = {
   user: null,
   token: localStorage.getItem('token'),
@@ -12,7 +11,6 @@ const initialState = {
   error: null
 }
 
-// Action types
 const AUTH_ACTIONS = {
   LOGIN_START: 'LOGIN_START',
   LOGIN_SUCCESS: 'LOGIN_SUCCESS',
@@ -28,7 +26,6 @@ const AUTH_ACTIONS = {
   CLEAR_ERROR: 'CLEAR_ERROR'
 }
 
-// Reducer
 const authReducer = (state, action) => {
   switch (action.type) {
     case AUTH_ACTIONS.LOGIN_START:
@@ -98,11 +95,9 @@ const authReducer = (state, action) => {
   }
 }
 
-// Auth Provider Component
 export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState)
 
-  // Configure axios defaults
   useEffect(() => {
     if (state.token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${state.token}`
@@ -111,7 +106,6 @@ export const AuthProvider = ({ children }) => {
     }
   }, [state.token])
 
-  // Load user on app start
   useEffect(() => {
     if (state.token) {
       loadUser()
@@ -120,7 +114,6 @@ export const AuthProvider = ({ children }) => {
     }
   }, [])
 
-  // Load user function
   const loadUser = async () => {
     try {
       dispatch({ type: AUTH_ACTIONS.LOAD_USER_START })
@@ -137,7 +130,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Login function
   const login = async (email, password) => {
     try {
       dispatch({ type: AUTH_ACTIONS.LOGIN_START })
@@ -148,7 +140,7 @@ export const AuthProvider = ({ children }) => {
         payload: response.data 
       })
       
-      toast.success('Login successful! Welcome back! 🎉')
+      toast.success('Login successful! Welcome back! ')
       return { success: true }
     } catch (error) {
       const message = error.response?.data?.message || 'Login failed'
@@ -161,7 +153,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Register function
   const register = async (userData) => {
     try {
       dispatch({ type: AUTH_ACTIONS.REGISTER_START })
@@ -185,7 +176,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Logout function
   const logout = async () => {
     try {
       await axios.post('/api/auth/logout')
@@ -197,7 +187,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Update profile function
   const updateProfile = async (profileData) => {
     try {
       const response = await axios.put('/api/auth/profile', profileData)
@@ -214,7 +203,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Change password function
   const changePassword = async (passwordData) => {
     try {
       await axios.put('/api/auth/password', passwordData)
@@ -227,7 +215,6 @@ export const AuthProvider = ({ children }) => {
     }
   }
 
-  // Clear error function
   const clearError = () => {
     dispatch({ type: AUTH_ACTIONS.CLEAR_ERROR })
   }
@@ -253,7 +240,6 @@ export const AuthProvider = ({ children }) => {
   )
 }
 
-// Custom hook to use auth context
 export const useAuth = () => {
   const context = useContext(AuthContext)
   if (!context) {
