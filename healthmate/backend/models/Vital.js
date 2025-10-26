@@ -40,7 +40,6 @@ const vitalSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Index for better query performance
 vitalSchema.index({ user: 1, date: -1 });
 vitalSchema.index({ user: 1, type: 1, date: -1 });
 
