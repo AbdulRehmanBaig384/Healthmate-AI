@@ -23,7 +23,7 @@ const vitalSchema = new mongoose.Schema({
     default: Date.now
   },
   time: {
-    type: String, // e.g., "morning", "afternoon", "evening", "night"
+    type: String, 
     default: 'morning'
   },
   notes: String,
