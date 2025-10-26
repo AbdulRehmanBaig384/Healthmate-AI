@@ -12,9 +12,9 @@ const vitalSchema = new mongoose.Schema({
     required: true
   },
   value: {
-    systolic: Number, // for blood pressure
-    diastolic: Number, // for blood pressure
-    reading: Number, // for other vitals
+    systolic: Number, 
+    diastolic: Number,
+    reading: Number, 
     unit: String
   },
   date: {
