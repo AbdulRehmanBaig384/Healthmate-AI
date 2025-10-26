@@ -41,9 +41,10 @@ const vitalSchema = new mongoose.Schema({
 });
 
 vitalSchema.index({ user: 1, date: -1 });
+
 vitalSchema.index({ user: 1, type: 1, date: -1 });
 
-// Virtual for formatted value display
+
 vitalSchema.virtual('formattedValue').get(function() {
   if (this.type === 'blood_pressure') {
     return `${this.value.systolic}/${this.value.diastolic} ${this.value.unit}`;
