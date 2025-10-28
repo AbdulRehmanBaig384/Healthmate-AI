@@ -1,6 +1,5 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-
-// Initialize Gemini AI
+// initialize for gemini integration
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Function to analyze medical report
@@ -75,7 +74,6 @@ const analyzeMedicalReport = async (fileUrl, fileType, reportType) => {
     const response = await result.response;
     const text = response.text();
 
-    // Try to parse JSON response
     try {
       const analysis = JSON.parse(text);
       return {
