@@ -9,17 +9,16 @@ const Footer = () => {
     <motion.footer 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white mt-20"
-    >
+      className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white mt-20" >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="flex items-center space-x-3 mb-4"
-            >
+              className="flex items-center space-x-3 mb-4" >
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
                 <Heart className="w-7 h-7 text-white" />
               </div>
@@ -34,8 +33,7 @@ const Footer = () => {
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="text-white/80 mb-6 max-w-md"
-            >
+              className="text-white/80 mb-6 max-w-md" >
               {isUrdu 
                 ? 'AI-powered health companion jo aapke medical reports ko analyze karta hai aur health tips deta hai.'
                 : 'AI-powered health companion that analyzes your medical reports and provides health insights.'
@@ -45,8 +43,7 @@ const Footer = () => {
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-sm text-white/60"
-            >
+              className="text-sm text-white/60">
               <p className="mb-2">
                 <strong>{isUrdu ? 'Disclaimer:' : 'Disclaimer:'}</strong>
               </p>
@@ -55,13 +52,11 @@ const Footer = () => {
               </p>
             </motion.div>
           </div>
-
-          {/* Quick Links */}
+          
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
+            transition={{ delay: 0.3 }}  >
             <h4 className="text-lg font-semibold mb-4">
               {isUrdu ? 'Quick Links' : 'Quick Links'}
             </h4>
@@ -88,8 +83,7 @@ const Footer = () => {
               </li>
             </ul>
           </motion.div>
-
-          {/* Contact Info */}
+{/* Contact Informaation  */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
