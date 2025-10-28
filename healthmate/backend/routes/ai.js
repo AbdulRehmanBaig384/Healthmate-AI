@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { protect } = require('../middleware/auth');
-const { getHealthTips,  getFriendlyMessage,
- getAIInsights
-} = require('../controllers/aiController');
+const { getHealthTips,  getFriendlyMessage, getAIInsights} = require('../controllers/aiController');
 
 // All routes are protected
 router.use(protect);
