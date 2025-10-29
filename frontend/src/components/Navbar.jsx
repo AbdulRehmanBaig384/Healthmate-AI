@@ -116,20 +116,17 @@ const Navbar = () => {
                       initial={{ opacity: 0, y: -10, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                      className="absolute right-0 mt-2 w-48 glass rounded-lg shadow-lg border border-white/20 py-2"
-                    >
+                      className="absolute right-0 mt-2 w-48 glass rounded-lg shadow-lg border border-white/20 py-2">
                       <Link
                         to="/profile"
                         onClick={() => setIsProfileOpen(false)}
-                        className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:bg-white/20 transition-colors"
-                      >
+                        className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:bg-white/20 transition-colors">
                         <Settings className="w-4 h-4" />
                         <span>{t('profile')}</span>
                       </Link>
                       <button
                         onClick={handleLogout}
-                        className="w-full flex items-center space-x-2 px-4 py-2 text-gray-700 hover:bg-white/20 transition-colors"
-                      >
+                        className="w-full flex items-center space-x-2 px-4 py-2 text-gray-700 hover:bg-white/20 transition-colors" >
                         <LogOut className="w-4 h-4" />
                         <span>{t('logout')}</span>
                       </button>
