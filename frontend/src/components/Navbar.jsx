@@ -67,8 +67,7 @@ const Navbar = () => {
                     isActive(item.path)
                       ? 'bg-primary-100 text-primary-700'
                       : 'text-gray-600 hover:text-primary-600 hover:bg-primary-50'
-                  }`}
-                >
+                  }`}>
                   <Icon className="w-4 h-4" />
                   <span className="font-medium">{item.label}</span>
                 </Link>
@@ -84,8 +83,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               onClick={toggleLanguage}
               className="p-2 rounded-lg bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
-              title={isUrdu ? 'Switch to English' : 'English mein badlein'}
-            >
+              title={isUrdu ? 'Switch to English' : 'English mein badlein'}  >
               <Globe className="w-5 h-5 text-gray-700" />
             </motion.button>
 
