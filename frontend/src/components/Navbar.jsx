@@ -175,12 +175,10 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden glass rounded-lg mt-2 border border-white/20 overflow-hidden"
-            >
+              className="md:hidden glass rounded-lg mt-2 border border-white/20 overflow-hidden" >
               <div className="px-4 py-2 space-y-1">
                 {navItems.map((item) => {
                   if (item.protected && !isAuthenticated) return null
-                  
                   const Icon = item.icon
                   return (
                     <Link
@@ -191,8 +189,7 @@ const Navbar = () => {
                         isActive(item.path)
                           ? 'bg-primary-100 text-primary-700'
                           : 'text-gray-600 hover:text-primary-600 hover:bg-primary-50'
-                      }`}
-                    >
+                      }`}>
                       <Icon className="w-4 h-4" />
                       <span className="font-medium">{item.label}</span>
                     </Link>
