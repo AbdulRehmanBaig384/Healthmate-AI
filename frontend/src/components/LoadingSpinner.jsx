@@ -8,7 +8,6 @@ const LoadingSpinner = ({ size = 'md', text = 'Loading...' }) => {
     lg: 'w-16 h-16',
     xl: 'w-24 h-24'
   }
-
   return (
     <div className="flex flex-col items-center justify-center min-h-[200px] space-y-4">
       <motion.div
