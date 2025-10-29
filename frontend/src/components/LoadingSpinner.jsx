@@ -19,8 +19,7 @@ const LoadingSpinner = ({ size = 'md', text = 'Loading...' }) => {
           rotate: { duration: 2, repeat: Infinity, ease: "linear" },
           scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
         }}
-        className={`${sizeClasses[size]} gradient-primary rounded-full flex items-center justify-center`}
-      >
+        className={`${sizeClasses[size]} gradient-primary rounded-full flex items-center justify-center`} >
         <Heart className="w-1/2 h-1/2 text-white" />
       </motion.div>
       
@@ -28,11 +27,9 @@ const LoadingSpinner = ({ size = 'md', text = 'Loading...' }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="text-gray-600 font-medium"
-      >
+        className="text-gray-600 font-medium">
         {text}
       </motion.p>
-      
       <motion.div
         initial={{ width: 0 }}
         animate={{ width: '100%' }}
