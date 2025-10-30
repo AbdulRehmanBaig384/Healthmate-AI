@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { 
-  Heart, 
-  Upload, 
-  Activity, 
-  FileText, 
-  TrendingUp, 
-  Calendar,
-  Plus,
-  ArrowRight,
+import {  Heart,Upload, Activity,FileText, TrendingUp,  Calendar, Plus,ArrowRight,
   Brain,
   Shield,
   Clock,
