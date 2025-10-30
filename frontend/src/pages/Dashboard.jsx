@@ -1,14 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import {  Heart,Upload, Activity,FileText, TrendingUp,  Calendar, Plus,ArrowRight,
-  Brain,
-  Shield,
-  Clock,
-  AlertCircle,
-  CheckCircle,
-  Star
-} from 'lucide-react'
+import {  Heart,Upload, Activity,FileText, TrendingUp,  Calendar, Plus,ArrowRight, Brain,Shield,Clock,AlertCircle,CheckCircle, Star} from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useLanguage } from '../context/LanguageContext'
 import LoadingSpinner from '../components/LoadingSpinner'
