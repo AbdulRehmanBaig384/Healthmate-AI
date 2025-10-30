@@ -55,7 +55,7 @@ const Dashboard = () => {
       })
     } catch (error) {
       console.error('Error fetching dashboard data:', error)
-      // Set default data on error
+      
       setDashboardData({
         recentReports: [],
         vitals: [],
@@ -145,8 +145,7 @@ const Dashboard = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-        >
+          className="mb-8" >
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
