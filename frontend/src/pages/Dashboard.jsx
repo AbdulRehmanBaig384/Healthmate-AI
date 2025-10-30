@@ -169,8 +169,7 @@ const Dashboard = () => {
                   repeat: Infinity, 
                   ease: "easeInOut" 
                 }}
-                className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center"
-              >
+                className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center" >
                 <Heart className="w-8 h-8 text-white" />
               </motion.div>
             </div>
@@ -182,16 +181,14 @@ const Dashboard = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
-        >
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8" >
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="card p-6"
-              >
+                className="card p-6" >
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-gray-600 mb-1">
@@ -215,8 +212,7 @@ const Dashboard = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mb-8"
-        >
+          className="mb-8" >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             {isUrdu ? 'Quick Actions' : 'Quick Actions'}
           </h2>
@@ -227,8 +223,7 @@ const Dashboard = () => {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.02 }}
-                  className="card card-hover p-6"
-                >
+                  className="card card-hover p-6" >
                   <div className={`w-12 h-12 bg-gradient-to-r ${action.color} rounded-lg flex items-center justify-center mb-4`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>
@@ -240,8 +235,7 @@ const Dashboard = () => {
                   </p>
                   <Link
                     to={action.link}
-                    className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium group"
-                  >
+                    className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium group" >
                     {isUrdu ? 'Start Karein' : 'Get Started'}
                     <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -257,8 +251,7 @@ const Dashboard = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-2"
-          >
+            className="lg:col-span-2">
             <div className="card p-6">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-bold text-gray-900">
@@ -266,8 +259,7 @@ const Dashboard = () => {
                 </h2>
                 <Link
                   to="/reports"
-                  className="text-primary-600 hover:text-primary-700 font-medium flex items-center"
-                >
+                  className="text-primary-600 hover:text-primary-700 font-medium flex items-center" >
                   {isUrdu ? 'Sab Dekhein' : 'View All'}
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </Link>
@@ -281,8 +273,7 @@ const Dashboard = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      className="flex items-center justify-between p-4 bg-gray-50 rounded-lg"
-                    >
+                      className="flex items-center justify-between p-4 bg-gray-50 rounded-lg" >
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                           <FileText className="w-5 h-5 text-blue-600" />
@@ -318,8 +309,7 @@ const Dashboard = () => {
                   </p>
                   <Link
                     to="/reports/upload"
-                    className="btn-primary"
-                  >
+                    className="btn-primary" >
                     {isUrdu ? 'Pehla Report Upload Karein' : 'Upload First Report'}
                   </Link>
                 </div>
