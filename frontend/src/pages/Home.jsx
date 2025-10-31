@@ -186,8 +186,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-            >
+              whileInView={{ opacity: 1, x: 0 }} >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 {isUrdu ? 'Kyun choose karein HealthMate?' : 'Why Choose HealthMate?'}
               </h2>
@@ -205,8 +204,7 @@ const Home = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center space-x-3"
-                  >
+                    className="flex items-center space-x-3" >
                     <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0" />
                     <span className="text-lg">{benefit}</span>
                   </motion.div>
@@ -217,8 +215,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="relative"
-            >
+              className="relative" >
               <div className="card p-8 bg-white/10 backdrop-blur-sm border border-white/20">
                 <div className="text-center">
                   <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -280,16 +277,14 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/register"
-                className="btn-primary text-lg px-8 py-4 flex items-center justify-center space-x-2 group"
-              >
+                className="btn-primary text-lg px-8 py-4 flex items-center justify-center space-x-2 group" >
                 <span>{isUrdu ? 'Free Account Banayein' : 'Create Free Account'}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Link
                 to="/login"
-                className="btn-ghost text-lg px-8 py-4"
-              >
+                className="btn-ghost text-lg px-8 py-4">
                 {isUrdu ? 'Login Karein' : 'Login Now'}
               </Link>
             </div>
