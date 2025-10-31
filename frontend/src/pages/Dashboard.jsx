@@ -355,8 +355,7 @@ const Dashboard = () => {
                     initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start space-x-3"
-                  >
+                    className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0" />
                     <p className="text-sm text-gray-700">{tip}</p>
                   </motion.div>
@@ -377,8 +376,7 @@ const Dashboard = () => {
                 </div>
                 <Link
                   to="/vitals"
-                  className="text-primary-600 hover:text-primary-700"
-                >
+                  className="text-primary-600 hover:text-primary-700">
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
