@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Heart, Upload, Activity, FileText, Brain, Shield, 
-  Users, 
-  Star,
-  ArrowRight,
-  CheckCircle
-} from 'lucide-react'
+import { Heart, Upload, Activity, FileText, Brain, Shield, Users, Star, ArrowRight, CheckCircle} from 'lucide-react'
 import { useLanguage } from '../context/LanguageContext'
 
 const Home = () => {
