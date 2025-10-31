@@ -65,8 +65,7 @@ const Home = () => {
               repeat: Infinity, 
               ease: "easeInOut" 
             }}
-            className="absolute top-20 left-10 w-20 h-20 bg-primary-200/30 rounded-full blur-xl"
-          />
+            className="absolute top-20 left-10 w-20 h-20 bg-primary-200/30 rounded-full blur-xl" />
           <motion.div
             animate={{ 
               y: [0, 20, 0],
@@ -77,8 +76,7 @@ const Home = () => {
               repeat: Infinity, 
               ease: "easeInOut" 
             }}
-            className="absolute bottom-20 right-10 w-32 h-32 bg-secondary-200/30 rounded-full blur-xl"
-          />
+            className="absolute bottom-20 right-10 w-32 h-32 bg-secondary-200/30 rounded-full blur-xl" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -86,8 +84,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-8"
-          >
+            className="mb-8" >
             <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-6">
               <Heart className="w-5 h-5 text-primary-500" />
               <span className="text-sm font-medium text-gray-700">
