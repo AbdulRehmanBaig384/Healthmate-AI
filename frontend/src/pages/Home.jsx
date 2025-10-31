@@ -1,12 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { 
-  Heart, 
-  Upload, 
-  Activity, 
-  FileText, 
-  Brain, 
-  Shield, 
+import { Heart, Upload, Activity, FileText, Brain, Shield, 
   Users, 
   Star,
   ArrowRight,
