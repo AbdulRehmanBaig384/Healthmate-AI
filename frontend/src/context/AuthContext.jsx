@@ -163,7 +163,7 @@ export const AuthProvider = ({ children }) => {
         payload: response.data 
       })
       
-      toast.success('Registration successful! Welcome to HealthMate! 🏥')
+      toast.success('Registration successful! Welcome to HealthMate! ')
       return { success: true }
     } catch (error) {
       const message = error.response?.data?.message || 'Registration failed'
@@ -183,7 +183,7 @@ export const AuthProvider = ({ children }) => {
       console.error('Logout error:', error)
     } finally {
       dispatch({ type: AUTH_ACTIONS.LOGOUT })
-      toast.success('Logged out successfully! 👋')
+      toast.success('Logged out successfully! ')
     }
   }
 
@@ -194,7 +194,7 @@ export const AuthProvider = ({ children }) => {
         type: AUTH_ACTIONS.UPDATE_PROFILE, 
         payload: response.data.user 
       })
-      toast.success('Profile updated successfully! ✨')
+      toast.success('Profile updated successfully! ')
       return { success: true }
     } catch (error) {
       const message = error.response?.data?.message || 'Failed to update profile'
@@ -206,7 +206,7 @@ export const AuthProvider = ({ children }) => {
   const changePassword = async (passwordData) => {
     try {
       await axios.put('/api/auth/password', passwordData)
-      toast.success('Password changed successfully! 🔒')
+      toast.success('Password changed successfully! ')
       return { success: true }
     } catch (error) {
       const message = error.response?.data?.message || 'Failed to change password'
