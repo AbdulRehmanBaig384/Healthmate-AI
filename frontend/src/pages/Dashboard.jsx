@@ -322,8 +322,7 @@ const Dashboard = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="space-y-6"
-          >
+            className="space-y-6">
             {/* Friendly Message */}
             <div className="card p-6">
               <div className="flex items-center space-x-3 mb-4">
