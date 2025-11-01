@@ -82,8 +82,7 @@ const Profile = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-        >
+          className="mb-8" >
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             {isUrdu ? 'Profile Settings' : 'Profile Settings'}
           </h1>
@@ -101,8 +100,7 @@ const Profile = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="lg:col-span-1"
-          >
+            className="lg:col-span-1" >
             <div className="card p-6">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
