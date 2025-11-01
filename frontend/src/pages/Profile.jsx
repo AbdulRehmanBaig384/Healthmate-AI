@@ -108,8 +108,7 @@ const Profile = () => {
                     <img
                       src={user.avatar}
                       alt={user.name}
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
+                      className="w-20 h-20 rounded-full object-cover" />
                   ) : (
                     <User className="w-10 h-10 text-primary-600" />
                   )}
