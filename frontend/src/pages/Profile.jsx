@@ -162,16 +162,14 @@ const Profile = () => {
                           <img
                             src={user.avatar}
                             alt={user.name}
-                            className="w-16 h-16 rounded-full object-cover"
-                          />
+                            className="w-16 h-16 rounded-full object-cover"/>
                         ) : (
                           <User className="w-8 h-8 text-gray-400" />
                         )}
                       </div>
                       <button
                         type="button"
-                        className="btn-secondary flex items-center space-x-2"
-                      >
+                        className="btn-secondary flex items-center space-x-2" >
                         <Camera className="w-4 h-4" />
                         <span>{isUrdu ? 'Change Picture' : 'Change Picture'}</span>
                       </button>
@@ -193,8 +191,7 @@ const Profile = () => {
                         value={profileData.name}
                         onChange={(e) => setProfileData({ ...profileData, name: e.target.value })}
                         className="input-primary pl-10"
-                        required
-                      />
+                        required />
                     </div>
                   </div>
 
