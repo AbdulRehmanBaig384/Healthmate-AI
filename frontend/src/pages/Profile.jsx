@@ -53,7 +53,6 @@ const Profile = () => {
     }
 
     setLoading(true)
-    
     try {
       await changePassword({
         currentPassword: passwordData.currentPassword,
