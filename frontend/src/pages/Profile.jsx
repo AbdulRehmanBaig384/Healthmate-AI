@@ -1,15 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { 
-  User, 
-  Mail, 
-  Globe, 
-  Lock, 
-  Save,
-  Eye,
-  EyeOff,
-  Camera
-} from 'lucide-react'
+import { User, Mail, Globe, Lock, Save, Eye, EyeOff, Camera} from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useLanguage } from '../context/LanguageContext'
 import LoadingSpinner from '../components/LoadingSpinner'
