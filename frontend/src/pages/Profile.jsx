@@ -128,8 +128,7 @@ const Profile = () => {
                         activeTab === tab.id
                           ? 'bg-primary-100 text-primary-700'
                           : 'text-gray-600 hover:bg-gray-50'
-                      }`}
-                    >
+                      }`} >
                       <Icon className="w-5 h-5" />
                       <span className="font-medium">{tab.label}</span>
                     </button>
@@ -144,8 +143,7 @@ const Profile = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-3"
-          >
+            className="lg:col-span-3">
             {activeTab === 'profile' && (
               <div className="card p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-6">
