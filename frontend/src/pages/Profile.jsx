@@ -233,8 +233,7 @@ const Profile = () => {
                           setProfileData({ ...profileData, language: e.target.value })
                           toggleLanguage()
                         }}
-                        className="input-primary pl-10"
-                      >
+                        className="input-primary pl-10">
                         <option value="en">English</option>
                         <option value="ur">Roman Urdu</option>
                       </select>
@@ -245,8 +244,7 @@ const Profile = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="btn-primary flex items-center space-x-2 disabled:opacity-50"
-                    >
+                      className="btn-primary flex items-center space-x-2 disabled:opacity-50">
                       <Save className="w-4 h-4" />
                       <span>{isUrdu ? 'Save Changes' : 'Save Changes'}</span>
                     </button>
@@ -277,13 +275,11 @@ const Profile = () => {
                         value={passwordData.currentPassword}
                         onChange={(e) => setPasswordData({ ...passwordData, currentPassword: e.target.value })}
                         className="input-primary pl-10 pr-10"
-                        required
-                      />
+                        required />
                       <button
                         type="button"
                         className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                        onClick={() => setShowCurrentPassword(!showCurrentPassword)}
-                      >
+                        onClick={() => setShowCurrentPassword(!showCurrentPassword)} >
                         {showCurrentPassword ? (
                           <EyeOff className="h-5 w-5 text-gray-400" />
                         ) : (
@@ -308,13 +304,11 @@ const Profile = () => {
                         value={passwordData.newPassword}
                         onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })}
                         className="input-primary pl-10 pr-10"
-                        required
-                      />
+                        required />
                       <button
                         type="button"
                         className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                        onClick={() => setShowPassword(!showPassword)}
-                      >
+                        onClick={() => setShowPassword(!showPassword)} >
                         {showPassword ? (
                           <EyeOff className="h-5 w-5 text-gray-400" />
                         ) : (
@@ -339,8 +333,7 @@ const Profile = () => {
                         value={passwordData.confirmPassword}
                         onChange={(e) => setPasswordData({ ...passwordData, confirmPassword: e.target.value })}
                         className="input-primary pl-10"
-                        required
-                      />
+                        required />
                     </div>
                   </div>
 
@@ -348,8 +341,7 @@ const Profile = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="btn-primary flex items-center space-x-2 disabled:opacity-50"
-                    >
+                      className="btn-primary flex items-center space-x-2 disabled:opacity-50">
                       <Lock className="w-4 h-4" />
                       <span>{isUrdu ? 'Change Password' : 'Change Password'}</span>
                     </button>
