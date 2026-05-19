@@ -9,8 +9,7 @@ import toast from 'react-hot-toast'
 
 const AIDoctor =()=>{
   const { user } = useAuth()
-  const { isUrdu } = useLanguage()
-
+  const { isUrdu } =useLanguage()
   const [message,setMessage]=useState('')
   const [messages,setMessages]=useState([
     {
