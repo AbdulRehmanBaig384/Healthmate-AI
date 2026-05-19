@@ -11,16 +11,14 @@ const AIDoctor =()=>{
   const { user } = useAuth()
   const { isUrdu } = useLanguage()
 
-  const [message, setMessage] = useState('')
-  const [messages, setMessages] = useState([
+  const [message,setMessage]=useState('')
+  const [messages,setMessages]=useState([
     {
-      from: 'ai',
-      text: isUrdu
-        ? `Assalam-o-Alaikum ${user?.name}, main aap ka AI Doctor hoon. Apni health problem ya report ke baare mein pooch sakte hain.`
-        : `Hello ${user?.name}, I am your AI Doctor. You can ask me about your health issues or reports.`
+      from:'ai',
+      text:isUrdu?`Assalam-o-Alaikum ${user?.name}, main aap ka AI Doctor hoon. Apni health problem ya report ke baare mein pooch sakte hain.`
+  : `Hello ${user?.name}, I am your AI Doctor. You can ask me about your health issues or reports.`
     }])
   const [loading, setLoading] = useState(false)
-
   const handleSend = async () => {
     if (!message.trim() || loading) return
 
