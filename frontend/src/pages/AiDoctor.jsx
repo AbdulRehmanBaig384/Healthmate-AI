@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import {useState} from 'react'
+import {motion} from 'framer-motion'
 import { Send, Brain, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
