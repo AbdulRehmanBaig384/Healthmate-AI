@@ -3,11 +3,11 @@ import {motion} from 'framer-motion'
 import {Send,Brain,ArrowLeft} from 'lucide-react'
 import {Link} from 'react-router-dom'
 import {useAuth} from '../context/AuthContext'
-import { useLanguage } from '../context/LanguageContext'
+import {useLanguage} from '../context/LanguageContext'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-const AIDoctor = () => {
+const AIDoctor =()=>{
   const { user } = useAuth()
   const { isUrdu } = useLanguage()
 
