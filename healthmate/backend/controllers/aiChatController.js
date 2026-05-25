@@ -1,4 +1,4 @@
-const { aiDoctorChat} = require("../utils/gemini");
+const {aiDoctorChat}=require("../utils/gemini");
 const AIChat = require("../models/AiChat");
 
 const chatWithDoctor = async (req, res) => {
