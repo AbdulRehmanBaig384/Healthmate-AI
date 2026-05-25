@@ -1,7 +1,7 @@
 const {aiDoctorChat}=require("../utils/gemini");
 const AIChat = require("../models/AiChat");
 
-const chatWithDoctor = async (req, res) => {
+const chatWithDoctor=async(req, res)=>{
   try {
     const userId = req.user.id;
     const { message } = req.body;
