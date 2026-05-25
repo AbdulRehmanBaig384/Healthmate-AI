@@ -16,7 +16,7 @@ const chatWithDoctor=async(req,res)=>{
       message,
     });
     const history = await AIChat.find({ user: userId })
-      .sort({ createdAt: -1 })
+      .sort({createdAt:-1})
       .limit(4)
       .lean();
     const formatted = history.reverse();
