@@ -1,11 +1,11 @@
 const {aiDoctorChat}=require("../utils/gemini");
 const AIChat = require("../models/AiChat");
 
-const chatWithDoctor=async(req, res)=>{
+const chatWithDoctor=async(req,res)=>{
   try{
     const userId = req.user.id;
     const {message}=req.body;
-    const language = req.user.language || "en";
+    const language=req.user.language||"en";
     if (!message) {
       return res
         .status(400)
