@@ -1,5 +1,5 @@
 const {aiDoctorChat}=require("../utils/gemini");
-const AIChat = require("../models/AiChat");
+const AIChat=require("../models/AiChat");
 
 const chatWithDoctor=async(req,res)=>{
   try{
