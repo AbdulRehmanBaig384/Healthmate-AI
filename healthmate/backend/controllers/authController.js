@@ -9,8 +9,7 @@ const register=async(req,res)=>{
         success:false,
         message:'User already exists with this email' });}
     const user=await User.create({
-      name,
-      email,password,
+      name,email,password,
       language:language||'en'
     });
     sendTokenResponse(user, 201, res);
