@@ -24,14 +24,14 @@ const protect=async(req,res,next) => {
         return res.status(401).json({
           success: false,
           message: 'Token is valid but user no longer exists'
-        }); }
+        });}
 
-      req.user=user;
+    req.user=user;
       next();
     } catch(error){
       return res.status(401).json({
-        success: false,
-        message: 'Invalid token'
+        success:false,
+        message:'Invalid token'
       });}
   }catch(error){
     console.error('Auth middleware error:', error);
