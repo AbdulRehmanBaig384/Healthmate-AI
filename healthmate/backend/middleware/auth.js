@@ -22,8 +22,8 @@ const protect=async(req,res,next) => {
       
       if(!user){
         return res.status(401).json({
-          success: false,
-          message: 'Token is valid but user no longer exists'
+          success:false,
+          message:'Token is valid but user no longer exists'
         });}
 
     req.user=user;
